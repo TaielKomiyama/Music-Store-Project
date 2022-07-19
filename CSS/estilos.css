@@ -1,0 +1,115 @@
+/* Reset de CSS. Para poner los estilos que quiera
+* {
+    margin: 0;
+    padding: 0;
+}
+*/ 
+
+html {
+    font-size: 62,5%; /*cambiar tamaño de raiz para que los px sean de 10 en 10*/
+
+}
+
+
+/*COLORES PARRAFOS*/
+
+/* BODY */
+
+h2 {
+    color: red; /*color opcion 1*/
+    text-align: center;
+    background-image: url(../Imagenes/123.jpg); /*llamar al archivo desde la carpeta*/
+    background-repeat: no-repeat;
+    background-position: center; /*back, center, etc*/
+    background-size: cover; /*cover, auto, contain*/
+}
+
+
+.parrafo_azul { 
+    color: #ffffff; /*color opcion 2 Hexagecimal*/
+}
+
+
+
+h1 {
+    color: rgba(24, 214, 88, 0.308) /*color opcion RGBA 3*/
+}
+
+/* Para hacer comentarios en CSS, se usan estos signos */
+
+/*ESTILOS D LISTAS*/
+
+ol {
+    list-style-type:upper-roman;
+} 
+
+/* ESTILOS PARA TEXTOS */
+
+body {
+    font-style: italic;/*normal o italica*/
+    font-weight: bold, 700; /*groso, puede ser con nombres o numeros. EJ:JOAN 300 (light)*/
+    font-size: 20px; /*tamaño default 16px. Se puede usar "px" o "%" */
+    font-family: "Joan", sans-serif; /*Tipografia Joan y en caso de no encontrarla, aplica San-serif*/
+    text-align: justify;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration: none; /* saca la linea de los links por ej*/
+
+}
+
+
+
+body {
+    background-color: #fefae0;
+    
+}
+
+.headerImg{
+    width: 20%;
+}
+
+.cajaNegra {
+    background-color: aquamarine;
+    position: relative; /* RELATIVE, toma acorde al elemento padre. ABOSLUT toma en cuenta la pagina. FIXED y STICKY, el elemento es visible aunque se haga scroll*/
+}
+
+.navegacion {
+    background-color: rgb(138, 165, 42);
+    display: flex; /*sirve para aplicar FLEXBOX*/
+    flex-direction: row; /*row, row-reverse, column, column-reverse*/
+    flex-wrap: wrap; /*envuelve o no envuelve a los hijos (no les modifica el tamaño, los mantiene). Tambien hay wrap reverse*/
+    /*flex-flow: row wrap; (abreviatura de direction y wrap */
+    /*align-items: ; alinea de manera vertical a los hijos: flex-start, flex-end, etc. VER CARPETA CSS*/
+    /*justify-content: ; alinea de manera horizontal a los hijos*/
+    font-size: 120%
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.submenu { /* se ponen class para evitar poner muchos ul*/
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    display: block;
+    background-color: aqua;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+

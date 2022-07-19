@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Lenguaje del sitio (ES = español ; EN = Ingles) -->
+
+<head>
+    <!-- Cabecera, datos importantes del sitio, que no se veran en el navegador -->
+    <meta charset="UTF-8"> <!-- Compatibilidad con ñ y caracteres especiales -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con EDGE y EXPLORER -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adaptacion a dispositivos moviles -->
+    <title>Mi primera pagina</title> <!-- titulo de la pagina-->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--imagen en la pestaña-->
+    <link rel="stylesheet" href="CSS/estilos.css"> <!-- opcion 1 para CSS DENTRO DE HTML SIEMPRE EN EL HEAD-->
+
+    <!-- Opcion 2 para CSS dentro de HTML, es usar STYLE en el Body *NO RECOMENDABLE* -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet"> <!--Tipografia desde Google Font-->
+
+
+</head>
+
+<body>
+    <!-- cuerpo de nuestro sitio/ lo que se ve en el navegador -->
+    <header>
+
+    <!-- ETIQUETAS DE BLOQUE-->
+    <!-- Ocupan todo el ancho disponible y no permiten que ningon otro elemtno se coloque al lado-->
+    <h1 id="No Regrets">No Regrets</h1>
+    <hr>
+    <h2 class="parrafo_azul">Somos una banda argentina/ japonesa dedicada a hacer covers y tocar en vivo</h2>
+    <!--CLASS para diferenciar de otros-->
+
+    <nav class="navegacion"
+        <ul class="menu">
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+                <ul class="submenu">
+                    <li><a href="#">Categoria</a></li>
+                    <li><a href="#">Catalogo</a></li>
+                    <li><a href="#">Servicios #2</a></li>
+                </ul>
+        </ul>
+    </nav>
+
+    <div>
+        <h3>Realizamos:</h3>  
+        <ol>
+            <!--LISTAS ORDENADAS Order List (PONEN NUMEROS) ; (se puede cambiar con <ol type= "A")-->
+            <li>Eventos presenciales</li>
+            <li>Video clips</li>
+            <li>Eventos familiares, comerciales, empresariales</li>
+        </ol>
+
+
+        <h3>Contamos con los siguientes instrumentos:</h3>
+        <ul>
+            <!-- LISTAS NO ORDENADAS Unorder List(BULLETS) -->
+            <li>Guitarra (acustica y electrica)</li>
+            <li>Bajo</li> <!-- <li*10 para agregar 10 li's-->
+            <li>Vocales y coros</li>
+            <li>Percusion</li>
+        </ul>
+    </div>
+    <p></p> <!-- parrafo -->
+
+
+
+    <!-- ETIQUETAS DE LINEA -->
+    <!-- Ocupar el espacio minimo necesario y permiten que otros elementos se pocisionen al lado-->
+
+
+
+    <!-- etiquetas HTML -->
+    <span></span> <!-- diferenciador/ especificador en el texto/ se puede cambiar el color del texto selccionado -->
+    <em></em> <!-- letra ilatica, de costado -->
+    <strong></strong> <!-- negrita el texto -->
+    <div></div> <!-- contenedor para etiquetas de bloque-->
+    <br> <!-- salto de linea. NO TIENE LLAVE DE CIERRE-->
+
+    <!-- ETIQUETAS SEMANTICAS-->
+    <!-- NO SOLO GENERAN ESTRUCTURA, SINO QUE TAMBIEN DEFINEN SU CONTENIDO-->
+
+    <header></header><!-- encabezado -->
+    <nav></nav> <!-- navegacion -->
+    <main></main> <!-- contenido principal -->
+    <section></section> <!-- seccion de la pagina-->
+    <article></article> <!-- seccion de la pagina -->
+    <aside></aside> <!-- publicidades o informacion al costado del sitio-->
+    <footer></footer> <!-- pie de pagina -->
+    <hr>
+
+    <table border="2" cellpadding="20px" cellspacing="10px">
+        <!--atributo que se puede agregar a la tabla ("border")-->
+        <th>Miembro</th>
+        <!--table head (encabezado)-->
+        <th>curso</th>
+        <th>turnos</th>
+
+        <tr>
+            <!--table row (filas)-->
+            <td>Ryu</td>
+            <!--table data (informacion/ columnas)-->
+            <td>Sebi</td>
+            <td>Kao</td>
+            <td>Tai</td>
+        </tr>
+
+        <tr>
+            <td>Lucia</td>
+            <td>javascript</td>
+            <td>tarde</td>
+        </tr>
+    </table>
+
+    <HR>
+
+    <h2>FORMULARIOS</h2>
+
+    <form>
+        <!--FORMULARIO. Requiere de 3 atributos (Action, Method y Enctype)-->
+        <h3></h3>
+        <h3></h3> <!-- si el METHOD no se aclara, por default es GET-->
+        <h3></h3>
+
+        <br>
+
+    </form>
+    <form>
+        <!--por default, FORM cuenta con action -->
+        <label for="nombre"> Ingrese su nombre </label>
+        <input type="text" placeholder="Ingrese su nombre" value="Taiel " name="nombre">
+        <!--PLACEHOLDER para hacer letra sobre el input-->
+        <br>
+        <input type="email" placeholder="Ingrese su email">
+        <br>
+        <input type="password" placeholder="Ingrese su contraseña">
+        <br>
+        <textarea name="" id=" " cols="30" rows="10" placeholder="Deje un mensaje aqui"></textarea>
+
+        <br>
+
+        <!--Boton de Radio -- Elige solo una opcion -->
+        <label for="genero">Indique su genero</label>
+        <!--Label ayuda a especificar por una opcion. El"for" debe ser igual al "name" del select. Label es la pregunta,input es la respuesta-->
+        <input type="radio" name="genero" value="mujer">Femenino
+        <input type="radio" name="genero" value="hombre">Masculino
+        <input type="radio" name="genero" value="no especifica">indefinido
+
+        <br>
+
+        <!-- CHECKBOX -- Elige varias opciones -->
+        <input type="checkbox"> Rojo
+        <input type="checkbox"> Azul
+
+        <br>
+
+        <!-- Desplegable-->
+        <p>De que pais sos?</p>
+        <select>
+            <!--permite elegir entre varias opciones, segun las otorgadas abajo-->
+            <option value="">Argentina</option>
+            <option value="">Chile</option>
+            <option value="">Colombia</option> <!-- VALUE identifica la opcion que elige el usuario-->
+        </select>
+
+        <fieldset>
+            <!-- campo de conjunto-->
+            <legend>Talle de pantalon</legend>
+            <!--titulo de field set-->
+            <select>
+                <option value="Rojo"> Rojo </option>
+                <option value="Blanco"> Blanco </option>
+                <option value="Negro"> Negro </option>
+            </select>
+            <select>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+        </fieldset>
+
+        <!-- BOTONES (3 tipos) -->
+
+        <!-- boton para enviar el formulario (submit)-->
+        <input type="submit" value="Enviar"> <!-- no hay placeholder, a cambio es "value"-->
+
+        <!--Boton para resetear el formulario (reset)-->
+        <input type="reset" value="Resetear">
+
+        <!-- Boton que no sirve. Unicamente sirve para JavaScript-->
+        <input type="button" value="No sirvo en HTML">
+
+
+    </form>
+
+    <!--ENLACES-->
+
+    <a href=""> </a>
+
+    <!--ENLACES RELATIVOS (Pagina o archivo del mismo proyecto)-->
+
+    <a href="Paginas/Contacto.html"> Pagina de contacto </a>
+
+    <!--ENLACES ABSOLUTOS (link directo a cualquier pagina, fuera del sitio)-->
+
+    <a href="https://www.youtube.com/"> Cuenta de Youtube </a>
+
+    <!--ENLACES INTERNOS (redireccion a cualquier parte del sitio a traves de un id)-->
+
+    <a href="#No Regrets">Volver arriba</a>
+
+    <hr>
+
+    <!--IMAGENES -->
+    <h3 id="imageBand">Imagenes</h3>
+    <img src="c:\Users\Intel\Desktop\No regrets\WhatsApp Image 2022-05-02 at 2.42.19 PM.jpeg" alt="Made by No Regrets" class="headerImg"
+        title="Made by No Regrets"> <!-- src = SOURCE; alt = texto alternativo, descripcion de la imagen-->
+
+    <hr>
+
+    <div>Caja 1</div>
+    <div class="cajaNegra">Caja 2</div> 
+    <div>Caja 3</div>
+
+    <!-- IFRAME -->
+    <!-- elementos traidos de otros sitios (google, youtube, instagram, etc)-->
+    <h3>Herman Li reacciona a...</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/L5cpcCTGyNc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <!-- Para poner un IFRAME: Entro a youtube, compartir, insertar, copiar y pegar -->
+
+    <h3>Google Maps</h3>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1654222805094!5m2!1ses!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h3>Spotify</h3>
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/album/6iJEtgHTEbVlSS5isIS71z?utm_source=generator" width="100%" height="380"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+
+    </header>
+</body>
+
+</html> <!-- fin del sitio -->
