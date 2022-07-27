@@ -28,10 +28,22 @@ header {
     background-color: black;
 }
 
+
+section {
+    display: flex;
+    border: 3px solid #EF3054;
+    height: 200px;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .Menu ul {
     height: 35px;
     position: sticky;
-    width: 100%;
     text-align: center;
     background-color: aliceblue;
     display: flex;
@@ -52,13 +64,13 @@ header {
 
 input {
     width: 120px;
-    height: 15px;
+    height: 25px;
     transition: all 1s;
     text-align: center;
 }
 
 input:focus {
-    width: 300px;
+    width: 240px;
     height: 25px;
     text-align: none;
 }
@@ -85,13 +97,13 @@ h3 {
 
 .Marcas {
     background-color: white;
-    margin-top: 35px;
     text-align:center;
     border: 3px solid #EF3054;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 150%;
     background: linear-gradient(to bottom, grey, white);
+    font
 }
 
 .Instrumentos {
@@ -103,7 +115,6 @@ h3 {
     padding-bottom: 20px;
     font-size: 150%;
     background: linear-gradient(to bottom, grey, white);
-
 }
 
 .Maps {
